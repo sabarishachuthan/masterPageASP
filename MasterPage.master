@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+   <table border="1">
+        <tr>
+            <th colspan="2" style="width :1170px; height:100px; background-color :palegreen" >
+                <h1> website master header</h1>
+                </th>
+        </tr>
+        <tr>
+            <td style="width:190px; height : 500px; background-color:ActiveBorder" />
+            <td style="width:980px; height:500px; background-color:coral;" >
+                
+                <asp:ContentPlaceHolder ID ="PageContentHolder" runat ="server" />
+                </td>
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>
